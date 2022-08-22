@@ -1,9 +1,9 @@
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 } 
 
 section {
@@ -25,6 +25,26 @@ section::after{
     z-index: -1;
 }
 
+input {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: .5rem 1.5rem;
+    border-radius: 2rem;
+    border: none;
+    font-style: italic;
+    background-color: rgba(22, 37, 49, 0.479);
+    color: #fff;
+    letter-spacing: .3rem;
+    text-align: center;
+    z-index: 10;
+}
+
+input::placeholder {
+    color: #fff
+}
+
 .container {
     position: relative;
     max-width: 800px;
@@ -39,6 +59,7 @@ section::after{
 
 .container .top {
     position: relative;
+    top: 10%;
     width: 100%;
     height: 8rem;
     margin: .1rem auto;
@@ -49,7 +70,9 @@ section::after{
     border-radius: 1rem;
 }
 
-
+.location {
+    text-align: center;
+}
 
 .container .bottom {
     display: flex;
